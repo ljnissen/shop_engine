@@ -5,6 +5,7 @@ PATH
       carrierwave
       rails (~> 4.0.8)
       rmagick
+      sqlite3
 
 GEM
   remote: https://rubygems.org/

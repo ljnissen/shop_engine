@@ -1,4 +1,2 @@
-module Shopeng
-  class ApplicationController < ActionController::Base
-  end
+class Shopeng::ApplicationController < ApplicationController
 end
