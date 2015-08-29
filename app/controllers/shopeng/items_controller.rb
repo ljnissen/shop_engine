@@ -44,9 +44,13 @@ module Shopeng
     end
 
     # DELETE /items/1
+    def delete
+      @item = Item.find(params[:id])
+    end
+
     def destroy
       @item.destroy
-      redirect_to items_url, notice: 'Item was successfully destroyed.'
+      redirect_to items_path, notice: 'Item was successfully destroyed.'
     end
 
     private
@@ -57,7 +61,7 @@ module Shopeng
 
       # Only allow a trusted parameter "white list" through.
       def item_params
-        params.require(:item).permit(:title, :text, :category_id)
+        params.require(:item).permit(:title, :text, :price, :category_id, :image)
       end
   end
 end

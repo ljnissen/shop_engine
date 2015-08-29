@@ -3,6 +3,7 @@ class CreateShopengItems < ActiveRecord::Migration
     create_table :shopeng_items do |t|
       t.string :title
       t.text :text
+      t.string :image
       t.string :category_id
 
       t.timestamps

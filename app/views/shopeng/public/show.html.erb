@@ -24,10 +24,8 @@
 			  <%= image_tag @item.image_url(:thumb).to_s %>
 			</p>
 		
-		
-			<%= link_to 'Edit', edit_item_path(@item), :class => 'btn btn-default' %> 
-			<%= link_to 'New', new_item_path, :class => 'btn btn-default' %> 
-			<%= link_to 'Back', items_path, :class => 'btn btn-primary' %>
+		 
+			<%= link_to 'Back', 'index', :class => 'btn btn-primary' %>
 		</div>
 	</div>
   </div>

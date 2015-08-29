@@ -3,4 +3,5 @@ module Shopeng
     isolate_namespace Shopeng
   end
   require "carrierwave"
+  require "mini_magick"
 end
