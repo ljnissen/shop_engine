@@ -20,9 +20,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency "carrierwave"
   s.add_dependency "mini_magick"
-  s.add_dependency "sqlite3"
+  s.add_dependency "pg"
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "pg"
 
   s.add_production_dependency "pg"
 end
