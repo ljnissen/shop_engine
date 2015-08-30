@@ -17,7 +17,14 @@ end
 APP_RAKEFILE = File.expand_path("../test/dummy/Rakefile", __FILE__)
 load 'rails/tasks/engine.rake'
 
-
+namespace :assets do
+  desc 'Precompile assets within dummy app'
+  task :precompile do
+    Dir.chdir('test/dummy') do
+      system('bundle exec rake assets:precompile')
+    end
+  end
+end
 
 Bundler::GemHelper.install_tasks
 
